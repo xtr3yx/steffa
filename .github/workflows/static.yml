@@ -47,11 +47,11 @@ jobs:
   uses: dabreadman/sync-upstream-repo@v1.3.0
   with:
     # URL of gitHub public upstream repo
-    upstream_repo: 
+    upstream_repo: http://github.com/actions/steffa
     # Branch to merge from upstream (defaults to downstream branch)
-    upstream_branch: # optional, default is main
+    upstream_branch: master
     # Branch to merge into downstream
-    downstream_branch: # optional, default is 
+    downstream_branch: master
     # GitHub Bot token
-    token: 
+    token: ${{ secrest.GITHUB_TOKEN }}
 
